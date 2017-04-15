@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'node -e "console.log(process.version)"'
+                sh 'asdf'
             }
         }
     }
