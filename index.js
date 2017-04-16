@@ -6,5 +6,5 @@ axios('https://api.github.com/user', {
         authorization: `token ${token}`
     }
 })
-    .then(console.log)
+    .then(x => console.log(x.data))
     .catch(console.log)
