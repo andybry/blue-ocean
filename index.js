@@ -1,5 +1,5 @@
 const axios = require('axios');
-const token = process.env.secret_key_PSW;
+const token = process.env.secret_key;
 
 axios('https://api.github.com/user', {
     headers: {
