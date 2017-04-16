@@ -6,5 +6,15 @@ pipeline {
                 sh 'echo doing build'
             }
         }
+        stage('test') {
+            steps {
+                sh 'echo doing test'
+            }
+        }
+        stage('deploy') {
+            steps {
+                sh 'echo doing deploy'
+            }
+        }
     }
 }
