@@ -4,7 +4,7 @@ pipeline {
     }
     environment {
         npm_config_cache = '.npm'
-        secret_key = credentials('GITHUB_TOKEN_AS_SECRET')
+        secret_key = credentials('GITHUB_TOKEN_AS_SECRET_TEXT')
     }
     stages {
         stage('build') {
