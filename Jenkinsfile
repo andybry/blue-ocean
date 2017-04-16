@@ -7,7 +7,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'echo doing build'
-                sh 'echo $secret_key_USR'
+                sh 'echo asdf${secret_key_USR}asdf'
             }
         }
         stage('build 2') {
