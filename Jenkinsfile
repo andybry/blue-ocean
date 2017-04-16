@@ -17,5 +17,12 @@ pipeline {
                 sh 'node .'
             }
         }
+        stage('finish') {
+            steps {
+                sh 'The start of the stage'
+                input 'Continue the stage?'
+                sh 'The end of the stage'
+            }
+        }
     }
 }
