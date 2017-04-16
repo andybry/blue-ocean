@@ -7,7 +7,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'echo doing build'
-                sh 'env'
+                sh 'echo $secret_key_USR'
             }
         }
         stage('build 2') {
