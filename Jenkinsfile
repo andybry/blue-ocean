@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo ${secret_key_USR} awk "{print toupper($0)}"'
+                sh 'echo ${secret_key_USR} | awk "{print toupper($0)}"'
             }
         }
     }
